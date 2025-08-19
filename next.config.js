@@ -15,13 +15,13 @@ module.exports = withNextra({
   async redirects() {
     return [
       {
-        source: '/anythingllm-cloud/502',
+        source: '/Methodius-cloud/502',
         destination: '/cloud/error-502',
         permanent: true,
       },
       {
         source: '/llm-not-using-my-docs',
-        destination: '/chatting-with-documents/rag-in-anythingllm',
+        destination: '/chatting-with-documents/rag-in-Methodius',
         permanent: true,
       },
     ];

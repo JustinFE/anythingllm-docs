@@ -9,7 +9,7 @@
     }
   },
   "roadmap": {
-    "title": "AnythingLLM Roadmap",
+    "title": "Methodius Roadmap",
     "theme": {
       "breadcrumb": true,
       "footer": true,
@@ -40,7 +40,7 @@
     }
   },
   "setup": {
-    "title": "AnythingLLM Setup",
+    "title": "Methodius Setup",
     "theme": {
       "breadcrumb": true,
       "footer": true,
@@ -66,9 +66,9 @@
       "toc": true
     }
   },
-  "-- AnythingLLM Community Hub": {
+  "-- Methodius Community Hub": {
     "type": "separator",
-    "title": "AnythingLLM Community Hub"
+    "title": "Methodius Community Hub"
   },
   "community-hub/about": {
     "title": "What is the Community Hub?",
@@ -115,7 +115,7 @@
     "title": "Installation Guides"
   },
   "installation-desktop": {
-    "title": "AnythingLLM Desktop",
+    "title": "Methodius Desktop",
     "theme": {
       "breadcrumb": true,
       "footer": true,
@@ -124,7 +124,7 @@
     }
   },
   "installation-docker": {
-    "title": "AnythingLLM Self-hosted",
+    "title": "Methodius Self-hosted",
     "theme": {
       "breadcrumb": true,
       "footer": true,
@@ -133,7 +133,7 @@
     }
   },
   "cloud": {
-    "title": "AnythingLLM Cloud",
+    "title": "Methodius Cloud",
     "theme": {
       "breadcrumb": true,
       "footer": true,
@@ -142,7 +142,7 @@
     }
   },
   "mobile": {
-    "title": "AnythingLLM Mobile",
+    "title": "Methodius Mobile",
     "theme": {
       "breadcrumb": true,
       "footer": true,
@@ -191,7 +191,7 @@
     }
   },
   "browser-extension": {
-    "title": "AnythingLLM Browser Extension",
+    "title": "Methodius Browser Extension",
     "theme": {
       "breadcrumb": true,
       "footer": true,

@@ -7,9 +7,9 @@ import { Callout } from "nextra/components";
 import Image from "next/image";
 
 <Callout type="info" emoji="️💡">
-    This is the legacy documentation for how documents in AnythingLLM worked. 
+    This is the legacy documentation for how documents in Methodius worked. 
     
-    As of AnythingLLM 1.8.5, we have a new way to use documents in chat. Upgrade to the latest version to get the best experience.
+    As of Methodius 1.8.5, we have a new way to use documents in chat. Upgrade to the latest version to get the best experience.
 
     [Learn about the new UX for documents in chat](/chatting-with-documents/introduction)
 </Callout>
@@ -19,7 +19,7 @@ import Image from "next/image";
 
 We get this question many times a week, where someone is confused, or even upset the LLM does not appear to "just know everything" about the documents that are embedded into a workspace.
 
-So to understand why this occurs we first need to clear up some confusion on how RAG (retrieval augmented generation) works inside of AnythingLLM.
+So to understand why this occurs we first need to clear up some confusion on how RAG (retrieval augmented generation) works inside of Methodius.
 
 This will not be deeply technical, but once you read this you will be an expert on how traditional RAG works.
 
@@ -31,7 +31,7 @@ That being said there are a ton of factors and moving parts that can impact the 
 
 ## LLMs do not introspect
 
-In AnythingLLM, we do not read your entire filesystem and then report that to the LLM, as it would waste tokens 99% of the time.
+In Methodius, we do not read your entire filesystem and then report that to the LLM, as it would waste tokens 99% of the time.
 
 Instead, your query is processed against your vector database of document text and we get back 4-6 text chunks from the documents that are deemed "relevant" to your prompt.
 
@@ -41,11 +41,11 @@ When you use RAG for document chatbots your entire document text cannot possibly
 
 Your entire document set is not "embedded" into the model. It has no idea what is in each document nor where those documents even are.
 
-If this is what you want, you are thinking of agents, which are coming to AnythingLLM soon.
+If this is what you want, you are thinking of agents, which are coming to Methodius soon.
 
-## So how does AnythingLLM work?
+## So how does Methodius work?
 
-Let's think of AnythingLLM as a framework or pipeline.
+Let's think of Methodius as a framework or pipeline.
 
 1. A workspace is created. The LLM can only "see" documents embedded in this workspace. If a document is not embedded, there is no way the LLM can see or access that document's content.
 
@@ -59,7 +59,7 @@ Let's think of AnythingLLM as a framework or pipeline.
 
 6. Your question is then embedded just like your document text was.
 
-7. The vector database then calculates the "nearest" chunk-vector. AnythingLLM filters any "low-score" text chunks (you can modify this). Each vector has the original text it was derived from attached to it.
+7. The vector database then calculates the "nearest" chunk-vector. Methodius filters any "low-score" text chunks (you can modify this). Each vector has the original text it was derived from attached to it.
 
 <Callout type="warning" emoji="️⚠️">
   **IMPORTANT!**
@@ -68,7 +68,7 @@ Let's think of AnythingLLM as a framework or pipeline.
 
     It's a mathematical process using the "Cosine Distance" formula.
 
-    However, here is where the embedder model used and other AnythingLLM settings can make the most difference. Read more in the next section.
+    However, here is where the embedder model used and other Methodius settings can make the most difference. Read more in the next section.
 
 </Callout>
 
