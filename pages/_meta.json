@@ -9,7 +9,7 @@
     }
   },
   "roadmap": {
-    "title": "Methodius Roadmap",
+    "title": "Methodius AI Roadmap",
     "theme": {
       "breadcrumb": true,
       "footer": true,
@@ -40,7 +40,7 @@
     }
   },
   "setup": {
-    "title": "Methodius Setup",
+    "title": "Methodius AI Setup",
     "theme": {
       "breadcrumb": true,
       "footer": true,
@@ -66,9 +66,9 @@
       "toc": true
     }
   },
-  "-- Methodius Community Hub": {
+  "-- Methodius AI Community Hub": {
     "type": "separator",
-    "title": "Methodius Community Hub"
+    "title": "Methodius AI Community Hub"
   },
   "community-hub/about": {
     "title": "What is the Community Hub?",
@@ -115,7 +115,7 @@
     "title": "Installation Guides"
   },
   "installation-desktop": {
-    "title": "Methodius Desktop",
+    "title": "Methodius AI Desktop",
     "theme": {
       "breadcrumb": true,
       "footer": true,
@@ -124,7 +124,7 @@
     }
   },
   "installation-docker": {
-    "title": "Methodius Self-hosted",
+    "title": "Methodius AI Self-hosted",
     "theme": {
       "breadcrumb": true,
       "footer": true,
@@ -133,7 +133,7 @@
     }
   },
   "cloud": {
-    "title": "Methodius Cloud",
+    "title": "Methodius AI Cloud",
     "theme": {
       "breadcrumb": true,
       "footer": true,
@@ -142,7 +142,7 @@
     }
   },
   "mobile": {
-    "title": "Methodius Mobile",
+    "title": "Methodius AI Mobile",
     "theme": {
       "breadcrumb": true,
       "footer": true,
@@ -191,7 +191,7 @@
     }
   },
   "browser-extension": {
-    "title": "Methodius Browser Extension",
+    "title": "Methodius AI Browser Extension",
     "theme": {
       "breadcrumb": true,
       "footer": true,
@@ -294,7 +294,7 @@
     "items": {
       "sponsor": {
         "title": "Sponsor",
-        "href": "https://github.com/sponsors/Mintplex-Labs"
+        "href": "support.forwardedge.ai"
       },
       "contact": {
         "title": "Contact Us",

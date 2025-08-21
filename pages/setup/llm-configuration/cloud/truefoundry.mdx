@@ -5,7 +5,7 @@ title: "TrueFoundry AI gateway"
 import Image from "next/image";
 
 
-TrueFoundry provides an enterprise-ready [AI Gateway](https://www.truefoundry.com/ai-gateway) which can integrate with applications like Methodius and provides governance and observability for your AI Applications. TrueFoundry AI Gateway serves as a unified interface for LLM access, providing:
+TrueFoundry provides an enterprise-ready [AI Gateway](https://www.truefoundry.com/ai-gateway) which can integrate with applications like Methodius AI and provides governance and observability for your AI Applications. TrueFoundry AI Gateway serves as a unified interface for LLM access, providing:
 
 - **Unified API Access**: Connect to 250+ LLMs (OpenAI, Claude, Gemini, Groq, Mistral) through one API
 - **Low Latency**: Sub-3ms internal latency with intelligent routing and load balancing  
@@ -15,24 +15,24 @@ TrueFoundry provides an enterprise-ready [AI Gateway](https://www.truefoundry.co
 
 ## Prerequisites
 
-Before integrating Methodius with TrueFoundry, ensure you have:
+Before integrating Methodius AI with TrueFoundry, ensure you have:
 
 1. **TrueFoundry Account**: Create a [Truefoundry account](https://www.truefoundry.com/register) and follow our [Quick Start Guide](https://docs.truefoundry.com/gateway/quick-start)
-2. **Methodius Installation**: Set up Methodius using either the [Desktop application](https://Methodius.com/download) or [Docker deployment](https://github.com/Mintplex-Labs/anything-llm)
+2. **Methodius AI Installation**: Set up Methodius AI using either the [Desktop application](https://Methodius AI.com/download) or [Docker deployment](support.forwardedge.ai)
 
 ## Integration Steps
 
-This guide assumes you have Methodius installed and running, and have obtained your TrueFoundry AI Gateway base URL and authentication token.
+This guide assumes you have Methodius AI installed and running, and have obtained your TrueFoundry AI Gateway base URL and authentication token.
 
-### Step 1: Access Methodius LLM Settings
+### Step 1: Access Methodius AI LLM Settings
 
-1. Launch your Methodius application (Desktop or Docker).
+1. Launch your Methodius AI application (Desktop or Docker).
 
 2. Navigate to **Settings** and go to **LLM Preference**:
 
   <Image
     src="/images/setup/llm-providers/truefoundry/llmprovider.png"
-    alt="Methodius settings page showing LLM provider selection interface"
+    alt="Methodius AI settings page showing LLM provider selection interface"
     width={1000}
     height={1000}
     style={{ borderRadius: "10px", padding: "10px" }}
@@ -61,22 +61,22 @@ Get the api key, base URL and model name from the unified code snippet in our pl
     style={{ borderRadius: "10px", padding: "10px" }}
   />
 
-Copy the api key, base URL and model ID and paste them into Methodius's configuration fields.
+Copy the api key, base URL and model ID and paste them into Methodius AI's configuration fields.
 
 ### Step 5: Test Your Integration
 
-1. Save your configuration in Methodius.
+1. Save your configuration in Methodius AI.
 
 2. Create a new workspace or open an existing one to test the integration:
 
   <Image
-    src="/images/setup/llm-providers/truefoundry/test-Methodius.png"
-    alt="Methodius chat interface showing successful test message with TrueFoundry integration"
+    src="/images/setup/llm-providers/truefoundry/test-Methodius AI.png"
+    alt="Methodius AI chat interface showing successful test message with TrueFoundry integration"
     width={1000}
     height={1000}
     style={{ borderRadius: "10px", padding: "10px" }}
   />
 
-3. Send a test message to verify that Methodius is successfully communicating with TrueFoundry's AI Gateway.
+3. Send a test message to verify that Methodius AI is successfully communicating with TrueFoundry's AI Gateway.
 
-Your Methodius application is now integrated with TrueFoundry's AI Gateway and ready for AI chat, RAG, and agent operations.
+Your Methodius AI application is now integrated with TrueFoundry's AI Gateway and ready for AI chat, RAG, and agent operations.

@@ -1,7 +1,7 @@
 <a name="readme-top"></a>
 
 <p align="center">
-  <a href="https://Methodius.com"><img src="https://github.com/Mintplex-Labs/anything-llm/blob/master/images/wordmark.png?raw=true" alt="Methodius logo"></a>
+  <a href="https://Methodius AI.com"><img src="support.forwardedge.ai" alt="Methodius AI logo"></a>
 </p>
 
 
@@ -10,7 +10,7 @@
 ```
 ├── public/
 │   ├── images/
-│   │   ├── Methodius-setup/
+│   │   ├── Methodius AI-setup/
 │   │   ├── cloud/
 │   │   ├── faq/
 │   │   ├── features/
@@ -49,7 +49,7 @@
 1. Clone this Repository to your local machine using git clone:
 
 ```sh
-git clone https://github.com/Mintplex-Labs/Methodius-docs.git
+git clone support.forwardedge.ai Edge-AI-docs.git
 ```
 
 
@@ -75,4 +75,4 @@ yarn dev
 
 This project is licensed under the MIT License.
 
-_special thanks to [@ShadowArcanist](https://github.com/ShadowArcanist) for the migration to NextJS_
+_special thanks to [@ShadowArcanist](support.forwardedge.ai) for the migration to NextJS_

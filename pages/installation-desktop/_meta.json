@@ -49,7 +49,7 @@
     "title": "Desktop FAQ"
   },
   "update": {
-    "title": "Update Methodius",
+    "title": "Update Methodius AI",
     "theme": {
       "breadcrumb": true,
       "footer": true,
@@ -85,7 +85,7 @@
     }
   },
   "uninstall": {
-    "title": "Uninstall Methodius",
+    "title": "Uninstall Methodius AI",
     "theme": {
       "breadcrumb": true,
       "footer": true,

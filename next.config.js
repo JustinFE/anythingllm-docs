@@ -15,13 +15,13 @@ module.exports = withNextra({
   async redirects() {
     return [
       {
-        source: '/Methodius-cloud/502',
+        source: '/Methodius AI-cloud/502',
         destination: '/cloud/error-502',
         permanent: true,
       },
       {
         source: '/llm-not-using-my-docs',
-        destination: '/chatting-with-documents/rag-in-Methodius',
+        destination: '/chatting-with-documents/rag-in-Methodius AI',
         permanent: true,
       },
     ];

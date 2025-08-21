@@ -18,7 +18,7 @@
     }
   },
   "error-502": {
-    "title": "502 Error on Methodius Hosted",
+    "title": "502 Error on Methodius AI Hosted",
     "theme": {
       "breadcrumb": true,
       "footer": true,

@@ -1,7 +1,7 @@
 {
-  "name": "Methodius-docs",
+  "name": "methodius-ai-docs",
   "version": "1.1.0",
-  "description": "Methodius Documentation",
+  "description": "Methodius AI Documentation",
   "scripts": {
     "dev": "next dev --port 3333",
     "img": "node scripts/compress-images.mjs",
@@ -11,14 +11,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Mintplex-Labs/Methodius-docs.git"
+    "url": "https://support.forwardedge.ai/Edge-AI-docs.git"
   },
   "author": "Mintplex Labs",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Mintplex-Labs/Methodius-docs/issues"
+    "url": "https://support.forwardedge.ai/Edge-AI-docs/issues"
   },
-  "homepage": "https://github.com/Mintplex-Labs/Methodius-docs#readme",
+  "homepage": "https://support.forwardedge.ai/Edge-AI-docs#readme",
   "dependencies": {
     "@next/third-parties": "^14.2.3",
     "@vercel/og": "^0.6.2",

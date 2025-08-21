@@ -2,6 +2,7 @@ import React from 'react'
 import { DocsThemeConfig, useConfig } from 'nextra-theme-docs'
 import { useRouter } from 'next/router'
 import _meta from './pages/changelog/_meta.json'
+
 // Get the latest release version from the changelog meta file
 const newRelease = Object.keys(_meta)
   .filter((version) => !version.endsWith('.pre') && !version.includes('rc'))
@@ -13,7 +14,7 @@ const newRelease = Object.keys(_meta)
 
 const config: DocsThemeConfig = {
   project: {
-    link: 'https://twitter.com/mintplexlabs', // Link for the Twitter icon on top nav bar
+    link: 'https://forwardedge.ai', // Top-right project link (change if you want GitHub here)
     icon: (
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -26,15 +27,15 @@ const config: DocsThemeConfig = {
     )
   },
   chat: {
-    link: 'https://discord.gg/Dh4zSZCdsC', // Link for discord icon on top nav bar
+    link: 'https://discord.gg/Dh4zSZCdsC', // Link for Discord icon on top nav bar
   },
-  docsRepositoryBase: 'https://github.com/Mintplex-Labs/Methodius-docs/tree/main', // Repo link for the 'Edit this page'
+  docsRepositoryBase: 'https://github.hadso.forwardedge.ai/Forward-Edge-AI/anythingllm-docs-internal/blob/main',
   footer: {
     text: (
       <span>
         MIT {new Date().getFullYear()} ©{' '}
-        <a href="https://github.com/Mintplex-Labs" target="_blank">
-          Mintplex Labs
+        <a href="https://forwardedge.ai" target="_blank">
+          Methodius AI
         </a>
         .
       </span>
@@ -42,13 +43,13 @@ const config: DocsThemeConfig = {
   },
   useNextSeoProps() {
     return {
-      titleTemplate: '%s ~ Methodius' // This is the text shown on the tab name, %s will show the title of current page
+      titleTemplate: '%s ~ Methodius AI'
     }
   },
   sidebar: {
-    defaultMenuCollapseLevel: 1, // Change this number to control the default collapse level
-    autoCollapse: true, // If true, automatically collapse inactive folders above defaultMenuCollapseLevel.
-    toggleButton: true, // Hide/show sidebar toggle button. Defaults to `false`.
+    defaultMenuCollapseLevel: 1,
+    autoCollapse: true,
+    toggleButton: true,
   },
   toc: {
     backToTop: true,
@@ -61,8 +62,8 @@ const config: DocsThemeConfig = {
     const { route } = useRouter()
     const socialCard =
       route === '/' || !title
-        ? 'https://docs.Methodius.com/images/og.png'
-        : `https://docs.Methodius.com/api/og?title=${title}`
+        ? 'https://docs.forwardedge.ai/images/og.png'
+        : `https://docs.forwardedge.ai/api/og?title=${encodeURIComponent(title)}`
 
     return (
       <>
@@ -72,16 +73,16 @@ const config: DocsThemeConfig = {
         <meta httpEquiv="Content-Language" content="en" />
         <meta name="description" content="All-in-one AI application that can do RAG, AI Agents, and much more with no code or infrastructure headaches." />
         <meta name="og:description" content="All-in-one AI application that can do RAG, AI Agents, and much more with no code or infrastructure headaches." />
-        <meta property="og:url" content="http://docs.Methodius.com"></meta>
+        <meta property="og:url" content="https://docs.forwardedge.ai" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:image" content={socialCard} />
-        <meta name="twitter:site:domain" content="docs.Methodius.com" />
-        <meta property="twitter:title" content="Methodius | The all-in-one AI desktop app." />
+        <meta name="twitter:site:domain" content="docs.forwardedge.ai" />
+        <meta property="twitter:title" content="Methodius AI | The all-in-one AI desktop app." />
         <meta property="twitter:description" content="All-in-one AI application that can do RAG, AI Agents, and much more with no code or infrastructure headaches." />
-        <meta name="twitter:url" content="https://docs.Methodius.com" />
-        <meta name="og:title" content={title ? title + ' – Methodius Docs' : 'Methodius Docs'} />
+        <meta name="twitter:url" content="https://docs.forwardedge.ai" />
+        <meta name="og:title" content={title ? title + ' – Methodius AI Docs' : 'Methodius AI Docs'} />
         <meta name="og:image" content={socialCard} />
-        <meta name="apple-mobile-web-app-title" content="Methodius Docs" />
+        <meta name="apple-mobile-web-app-title" content="Methodius AI Docs" />
         <link rel="icon" href="/favicon.png" type="image/png" />
       </>
     )
@@ -97,16 +98,16 @@ const config: DocsThemeConfig = {
           fill="currentColor" />
       </svg>
       <span style={{ marginLeft: '.7em', fontWeight: 700 }}>
-        Methodius Docs
+        Methodius AI Docs
       </span>
     </>
   ),
   banner: {
     dismissible: true,
-    key: `${newRelease}-release`, // Storage key to keep the banner state (dismissed or not). If you have updated your banner text, you should change the key to make sure the banner is shown again.
+    key: `${newRelease}-release`,
     text: (
-      <a href="https://Methodius.com/download" target="_blank">
-        🚀 Methodius {newRelease} is live! Update now →
+      <a href="https://forwardedge.ai/download" target="_blank">
+        🚀 Methodius AI {newRelease} is live! Update now →
       </a>
     )
   }
